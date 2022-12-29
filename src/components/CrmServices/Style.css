@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  .bg-myRed{
+    background-color: crimson;
+  }
+  
+  .content{
+    padding: 12px;
+    height: 30px;
+  }
+  
+  .coloring{
+    color: black;
+  }
+  
+  .main-container {
+    display: flex;
+
+  }
+  main {
+    padding: 10px;
+  }
+  
+  .title {
+    font-size: 3rem;
+    display: grid;
+    place-items: center;
+  }
+  
+  .sidebar {
+    background-color: #ffffff;
+    background-image: linear-gradient(to bottom, #044056, #262b40);
+   
+
+    color: rgb(4, 253, 253);
+    height: 100vh;
+    overflow-y: auto;
+  }
+  .top_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+  }
+  .logo {
+    font-size: 18px;
+    line-height: 0;
+  }
+  .bars {
+    width: 30px;
+  }
+  .hide {
+    display: none;
+  }
+ 
+.modal-dialog {
+    max-width: 75% !important;
+   
+}
+
+
+
+  
+  .search {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    height: 30px;
+    padding: 10px;
+  }
+  .search input {
+    border: none;
+    margin-left: 10px;
+    border-radius: 5px;
+    background: rgb(238, 238, 238);
+  
+    color: white;
+  }
+  
+  .routes {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .link {
+    display: flex;
+    color: rgb(253, 248, 248);
+    gap: 10px;
+    padding: 5px 10px;
+    border-right: 4px solid transparent;
+    transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  }
+  .link:hover {
+    border-right: 4px solid white;
+
+    background: #fff;
+    color: #ff4081;
+
+    transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  }
+  .active {
+    border-right: 4px solid #ff4081;
+    background: rgb(244, 244, 245);
+    color: #ff4081;
+  }
+  .link_text {
+    white-space: nowrap;
+    font-size: 15px;
+  }
+  
+  .menu {
+    display: flex;
+    color: rgb(250, 245, 245);
+  
+    padding: 5px 10px;
+    border-right: 4px solid transparent;
+    transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    justify-content: space-between;
+  }
+  .menu_item {
+    display: flex;
+    gap: 10px;
+  }
+  .menu_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu_container .link {
+    padding-left: 20px;
+    border-bottom: #fff 0.5px solid;
+  }
+  
+
+
+
+  .container {
+    text-align: center;
+    }
+    .toggle-switch {
+    position: relative;
+    width: 60px;
+    display: inline-block;
+    text-align: left;
+    margin-left: -150px;
+   margin-top: 20px;
+    }
+    .checkbox {
+    display: none;
+    }
+    .label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 0 solid #bbb;
+    border-radius: 20px;
+    }
+    .inner {
+    display: block;
+    width: 200%;
+   
+    transition: margin 0.3s ease-in 0s;
+    }
+    .inner:before,
+    .inner:after {
+    float: left;
+    width: 50%;
+    height: 26px;
+    padding: 0;
+    line-height: 36px;
+    color: #fff;
+    font-weight: bold;
+    box-sizing: border-box;
+    }
+    .inner:before {
+      font-size: 12px;
+    content: "YES";
+    padding-left: 12px;
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    }
+    .inner:after {
+    content: "NO";
+    padding-right: 12px;
+    background-color: #bbb;
+    color: #fff;
+    text-align: right;
+    }
+    .switch {
+    display: block;
+    width: 18px;
+    margin: 8px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-top: 2px;
+    align-items: center;
+    right: 30px;
+    border: 0 solid #bbb;
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+    }
+    .checkbox:checked + .label .inner {
+    margin-left: 0;
+    }
+    .checkbox:checked + .label .switch {
+    right: 0px;
+    }
+    #header{
+      font-size: 16px;
+      animation-name: example;
+    animation-duration: 3s;
+      }
+      @keyframes example {
+        from {font-size: 16px;}
+        to {font-size: 70px; 
+          color: goldenrod;
+        
+        }
+      }
